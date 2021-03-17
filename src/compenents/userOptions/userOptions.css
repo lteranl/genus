@@ -1,0 +1,29 @@
+.userOptions__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userOptions-avatar {
+    height: 155px;
+    width: 155px;
+}
+.userOptions-options{
+    display: flex;
+}
+
+.userOptions-options div{
+    padding: 0 25px;
+}
+.userOptions-options div:hover{
+    padding-top: 5px;
+    background-color: #0d7377;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.userOptions-post p, 
+.userOptions-chat p, 
+.userOptions-music p{
+    margin: 2px;
+    font-family: 'Ruda', sans-serif;
+}
