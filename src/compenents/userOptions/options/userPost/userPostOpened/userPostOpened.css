@@ -1,0 +1,38 @@
+.userOptions-post__opened {
+    border: 1px solid;
+    height: 250px;
+    width: 600px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.post__opened-textarea{
+    font-size: 1.2em;
+    resize: none;
+    border: 0;
+    border-radius: 15px;
+    padding: 0;
+    height: 230px;
+    width: 580px;
+}
+.post-opened-btn {
+    width: 200px;
+    border: none;
+    background-color: #fff;
+    font-family: 'Ruda', 'sans-serif';
+    font-weight: 700;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 10px;
+}
+.post-opened-btn:hover{
+    background-color: #0d7377;
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
