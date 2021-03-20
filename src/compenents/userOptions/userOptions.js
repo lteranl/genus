@@ -1,6 +1,6 @@
 import React from "react";
 import Options from "./options/options";
-import UserAvatar from "./userAvatar/userAvatar";
+import UserAvatar from "../userAvatar/userAvatar";
 import "./userOptions.css";
 
 const UserOptions = () => {

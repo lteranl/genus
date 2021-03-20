@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../../../resources/defaultImage.png";
+import Avatar from "../../resources/defaultImage.png";
 
 const UserAvatar = () => {
     return (
