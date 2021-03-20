@@ -4,13 +4,14 @@ import defaultAvatar from "../../resources/defaultImage.png";
 import UserAvatar from "../userAvatar/userAvatar";
 import Username from "./username/username";
 
-const Feed = ({ image, data }) => {
-    const avatarImage = require(`../../resources/ ${image}`);
+const Feed = ({ data }) => {
+    // const avatarImage = require(`../../resources/${image}`);
+    console.log(data);
     return (
         <div className="feed-container">
             <div className="feed-content">
                 <div className="feed__avatar-container">
-                    <UserAvatar avatar={avatarImage.default} />
+                    <UserAvatar avatar={data.avatarImage} />
                 </div>
                 <div className="feed__main">
                     <div className="feed-main-username">
@@ -30,8 +31,8 @@ const Feed = ({ image, data }) => {
     );
 };
 
-Feed.defaultProps = {
-    image: defaultAvatar,
-};
+// Feed.defaultProps = {
+//     image: defaultAvatar,
+// };
 
 export default Feed;
