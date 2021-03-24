@@ -1,43 +1,44 @@
-import girl from "../girl.jpg";
-import pom from "../pom.jpg";
+// import girl from "../girl.jpg";
+// import pom from "../pom.jpg";
+
 const posts = [
     {
         id: 1,
-        avatarImage: girl,
+        avatarImage: "girl.jpg",
         name: "Leanne Graham",
         username: "Bret",
         email: "Sincere@april.biz",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, urna in pharetra egestas, erat nulla sagittis elit, vel aliquam leo velit eu orci. Phasellus tempus dignissim dolor a varius. Duis at justo sed orci luctus fringilla. Phasellus dapibus libero nisl. Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",
-        likes: "570",
-        shares: "49",
+        likes: 570,
+        shares: 49,
         comments: ["NICE!", "good job"],
     },
     {
         id: 2,
-        avatarImage: pom,
+        avatarImage: "pom.jpg",
         name: "Ervin Howell",
         username: "Antonette",
         email: "Shanna@melissa.tv",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, urna in pharetra egestas, erat nulla sagittis elit, vel aliquam leo velit eu orci. Phasellus tempus dignissim dolor a varius. Duis at justo sed orci luctus fringilla. Phasellus dapibus libero nisl. Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",
-        likes: "20",
-        shares: "4",
+        likes: 251,
+        shares: 23,
         comments: ["way to go!", "good job"],
     },
     {
         id: 3,
-        avatarImage: pom,
+        avatarImage: "pom.jpg",
         name: "Clementine Bauch",
         username: "Samantha",
         email: "Nathan@yesenia.net",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",
-        likes: "5",
-        shares: "0",
+        likes: 15,
+        shares: 0,
         comments: ["cool!", "good job"],
     },
 ];

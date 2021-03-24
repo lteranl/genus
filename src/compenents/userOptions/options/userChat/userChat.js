@@ -4,7 +4,7 @@ const UserChat = () => {
     return (
         <div className="userOptions-chat">
             <i class="fas fa-comment-dots fa-2x"></i>
-            <p>Chat</p>
+            <p className="open-icon">Chat</p>
         </div>
     );
 };

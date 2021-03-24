@@ -1,10 +1,10 @@
 import React from "react";
-// import Avatar from "../../resources/defaultImage.png";
+import "./userAvatar.css";
 
 const UserAvatar = ({ avatar }) => {
     return (
         <div>
-            <img className="userOptions-avatar" src={avatar} alt="" />
+            <img className="user-avatar" src={avatar} alt="" />
         </div>
     );
 };

@@ -3,10 +3,10 @@ import UserChat from "./userChat/userChat";
 import UserMusic from "./userMusic/userMusic";
 import UserPost from "./userPost/userPost";
 
-const Options = () => {
+const Options = ({ handlePostClicked }) => {
     return (
         <div className="userOptions-options">
-            <UserPost />
+            <UserPost handlePostClicked={handlePostClicked} />
             <UserChat />
             <UserMusic />
         </div>

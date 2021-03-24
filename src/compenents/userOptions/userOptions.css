@@ -1,4 +1,4 @@
-.userOptions__container{
+.userOptions__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,23 +7,22 @@
     height: 155px;
     width: 155px;
 }
-.userOptions-options{
+.userOptions-options {
     display: flex;
 }
 
-.userOptions-options div{
-    padding: 0 25px;
+.userOptions-options div {
+    padding: 5px 25px 0;
 }
-.userOptions-options div:hover{
-    padding-top: 5px;
+.userOptions-options div:hover {
     background-color: #0d7377;
     border-radius: 25px;
     color: #fff;
 }
 
-.userOptions-post p, 
-.userOptions-chat p, 
-.userOptions-music p{
+.userOptions-post p,
+.userOptions-chat p,
+.userOptions-music p {
     margin: 2px;
-    font-family: 'Ruda', sans-serif;
+    font-family: "Ruda", sans-serif;
 }
