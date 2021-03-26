@@ -1,15 +1,19 @@
 .userOptions-post__opened {
     border: 1px solid;
-    height: 250px;
+    height: 100%;
     width: 600px;
-    background-color: pink;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: top;
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-.post__opened-textarea{
+.post__opened-textarea {
     font-size: 1.2em;
     resize: none;
     border: 0;
@@ -17,18 +21,36 @@
     padding: 10px;
     height: 230px;
     width: 580px;
+    margin-top: 160px;
 }
 .post-opened-btn {
     width: 200px;
     border: none;
     background-color: #fff;
-    font-family: 'Ruda', 'sans-serif';
+    font-family: "Ruda", "sans-serif";
     font-weight: 700;
     font-size: 1.3em;
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    top: 365px;
 }
-.post-opened-btn:hover{
+.close-icon {
+    text-align: center;
+    position: fixed;
+    top: 175px;
+    right: 385px;
+}
+.close-icon i {
+    border-radius: 25px;
+    padding-top: 6px;
+    height: 26px;
+    width: 26px;
+}
+.close-icon i:hover {
+    /* border-radius: 20px; */
+    background-color: #0d7377;
+    color: #fff;
+}
+.post-opened-btn:hover {
     background-color: #0d7377;
     color: #fff;
     font-weight: 800;

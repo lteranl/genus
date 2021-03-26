@@ -1,3 +1,10 @@
-body{
-  color: #212121;
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    color: #212121;
+}
+.App {
+    position: relative;
 }

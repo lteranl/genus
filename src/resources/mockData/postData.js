@@ -7,7 +7,6 @@ const posts = [
         avatarImage: "girl.jpg",
         name: "Leanne Graham",
         username: "Bret",
-        email: "Sincere@april.biz",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, urna in pharetra egestas, erat nulla sagittis elit, vel aliquam leo velit eu orci. Phasellus tempus dignissim dolor a varius. Duis at justo sed orci luctus fringilla. Phasellus dapibus libero nisl. Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",
@@ -20,7 +19,6 @@ const posts = [
         avatarImage: "pom.jpg",
         name: "Ervin Howell",
         username: "Antonette",
-        email: "Shanna@melissa.tv",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, urna in pharetra egestas, erat nulla sagittis elit, vel aliquam leo velit eu orci. Phasellus tempus dignissim dolor a varius. Duis at justo sed orci luctus fringilla. Phasellus dapibus libero nisl. Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",
@@ -33,7 +31,6 @@ const posts = [
         avatarImage: "pom.jpg",
         name: "Clementine Bauch",
         username: "Samantha",
-        email: "Nathan@yesenia.net",
         date: new Date(),
         text:
             "Lorem ipsum dolor sit amet, Curabitur vitae arcu et ante luctus tincidunt sed vel tellus.",

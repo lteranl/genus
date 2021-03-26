@@ -1,0 +1,13 @@
+* {
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.scroll-bar {
+    overflow-y: scroll;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    height: 65vh;
+}

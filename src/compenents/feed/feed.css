@@ -1,10 +1,11 @@
 .feed-container {
-    box-shadow: -3px 4px 11px 0px #62e6db;
+    box-shadow: -3px 4px 11px 0px #0d7377;
     background-color: #262525;
     color: rgb(223, 219, 219);
-    margin: 8px;
+    margin: 10px;
     padding: 8px;
     border-radius: 25px;
+    height: 150px;
 }
 .feed__content-text {
     text-align: left;
@@ -12,7 +13,6 @@
 .feed__content {
     display: flex;
     flex-direction: row;
-    padding: 8px;
 }
 .feed-main-username {
     display: flex;
@@ -61,7 +61,7 @@
 
 .feed-info-container {
     display: flex;
-    margin: 16px;
+    margin: 5px;
 }
 .feed-info__label {
     color: rgb(159, 155, 155);
