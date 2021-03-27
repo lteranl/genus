@@ -5,11 +5,16 @@
     font-size: 20px;
 }
 .userOptions-avatar {
-    height: 155px;
-    width: 155px;
+    height: 15vh;
+    width: 15vh;
 }
 .userOptions-options {
     display: flex;
+}
+.userOptions-post,
+.userOptions-chat,
+.userOptions-music {
+    text-align: center;
 }
 
 .userOptions-options div {

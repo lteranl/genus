@@ -1,0 +1,12 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-info {
+    text-align: center;
+    margin: 0 0 15px;
+}
+.profile-name {
+    font-size: 36px;
+}

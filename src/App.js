@@ -7,6 +7,9 @@ import UserPostOpened from "./compenents/userOptions/options/userPost/userPostOp
 import UserOptions from "./compenents/userOptions/userOptions";
 import Scroll from "./compenents/feed/scroll/scroll";
 import Music from "./compenents/musicDisplay/music";
+import { Switch, Route } from "react-router-dom";
+import Profile from "./compenents/profile/profie";
+import UserAuth from "./compenents/user-auth/user-auth";
 
 function App() {
     const [postData, setPostData] = useState(posts);
@@ -50,29 +53,47 @@ function App() {
 
     return (
         <div className="App">
-            <NavBar />
-            <UserOptions handlePostClicked={handlePostClicked} />
-            {postClick && (
-                <UserPostOpened
-                    addToFeed={addToFeed}
-                    handlePostClicked={handlePostClicked}
-                />
-            )}
-            <Scroll>
-                {postData.map((post) => {
-                    console.log(post);
-                    return (
-                        <Feed
-                            key={post.id}
-                            image={post.avatarImage}
-                            data={post}
-                            handleLikeBtn={addLikes}
-                            handleShareBtn={addShare}
-                        />
-                    );
-                })}
-            </Scroll>
-            <Music />
+            <Switch>
+                <Route path="/logout">
+                    <UserAuth />
+                </Route>
+
+                <>
+                    <NavBar />
+                    <Switch>
+                        <Route path="/profile">
+                            <Profile />
+                        </Route>
+
+                        <Route path="/">
+                            <UserOptions
+                                handlePostClicked={handlePostClicked}
+                            />
+                            {postClick && (
+                                <UserPostOpened
+                                    addToFeed={addToFeed}
+                                    handlePostClicked={handlePostClicked}
+                                />
+                            )}
+                            <Scroll>
+                                {postData.map((post) => {
+                                    console.log(post);
+                                    return (
+                                        <Feed
+                                            key={post.id}
+                                            image={post.avatarImage}
+                                            data={post}
+                                            handleLikeBtn={addLikes}
+                                            handleShareBtn={addShare}
+                                        />
+                                    );
+                                })}
+                            </Scroll>
+                            <Music />
+                        </Route>
+                    </Switch>
+                </>
+            </Switch>
         </div>
     );
 }

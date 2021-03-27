@@ -56,8 +56,6 @@
     display: flex;
     justify-content: space-evenly;
 }
-.feed__menu:first-child {
-}
 
 .feed-info-container {
     display: flex;
