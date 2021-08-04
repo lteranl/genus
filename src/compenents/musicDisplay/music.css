@@ -1,5 +1,7 @@
 .music__container {
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 .music__container-border {
     display: flex;

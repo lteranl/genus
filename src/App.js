@@ -12,90 +12,88 @@ import Profile from "./compenents/profile/profie";
 import UserAuth from "./compenents/user-auth/user-auth";
 
 function App() {
-    const [postData, setPostData] = useState(posts);
+  const [postData, setPostData] = useState(posts);
 
-    const addToFeed = (userData, FeedText) => {
-        const tempFeedData = [...postData];
+  const addToFeed = (userData, FeedText) => {
+    const tempFeedData = [...postData];
 
-        const newFeed = {
-            id: postData.length + 1,
-            ...userData,
-            date: new Date(),
-            text: FeedText,
-            likes: 0,
-            shares: 0,
-            comments: [],
-        };
-        tempFeedData.push(newFeed);
-        setPostData(tempFeedData);
+    const newFeed = {
+      id: postData.length + 1,
+      ...userData,
+      date: new Date(),
+      text: FeedText,
+      likes: 0,
+      shares: 0,
+      comments: [],
     };
+    tempFeedData.push(newFeed);
+    setPostData(tempFeedData);
+  };
 
-    const addLikes = (id) => {
-        const tempPostData = [...postData];
-        const flattempPostData = tempPostData.map((posts) => posts.id);
-        const postsIndex = flattempPostData.indexOf(id);
-        tempPostData[postsIndex].likes += 1;
-        setPostData(tempPostData);
-    };
-    const addShare = (id) => {
-        const tempPostData = [...postData];
-        const flattempPostData = tempPostData.map((posts) => posts.id);
-        const postsIndex = flattempPostData.indexOf(id);
-        tempPostData[postsIndex].shares += 1;
-        setPostData(tempPostData);
-    };
+  const addLikes = (id) => {
+    const tempPostData = [...postData];
+    const flattempPostData = tempPostData.map((posts) => posts.id);
+    const postsIndex = flattempPostData.indexOf(id);
+    tempPostData[postsIndex].likes += 1;
+    setPostData(tempPostData);
+  };
+  const addShare = (id) => {
+    const tempPostData = [...postData];
+    const flattempPostData = tempPostData.map((posts) => posts.id);
+    const postsIndex = flattempPostData.indexOf(id);
+    tempPostData[postsIndex].shares += 1;
+    setPostData(tempPostData);
+  };
 
-    const [postClick, setPostClick] = useState(false);
+  const [postClick, setPostClick] = useState(false);
 
-    const handlePostClicked = () => {
-        setPostClick(!postClick);
-    };
+  const handlePostClicked = () => {
+    setPostClick(!postClick);
+  };
 
-    return (
-        <div className="App">
-            <Switch>
-                <Route path="/logout">
-                    <UserAuth />
-                </Route>
+  return (
+    <div className="App">
+      <Switch>
+        <Route path="/logout">
+          <UserAuth />
+        </Route>
 
-                <>
-                    <NavBar />
-                    <Switch>
-                        <Route path="/profile">
-                            <Profile />
-                        </Route>
+        <>
+          <NavBar />
+          <Switch>
+            <Route path="/profile">
+              <Profile />
+            </Route>
 
-                        <Route path="/">
-                            <UserOptions
-                                handlePostClicked={handlePostClicked}
-                            />
-                            {postClick && (
-                                <UserPostOpened
-                                    addToFeed={addToFeed}
-                                    handlePostClicked={handlePostClicked}
-                                />
-                            )}
-                            <Scroll>
-                                {postData.map((post) => {
-                                    console.log(post);
-                                    return (
-                                        <Feed
-                                            key={post.id}
-                                            image={post.avatarImage}
-                                            data={post}
-                                            handleLikeBtn={addLikes}
-                                            handleShareBtn={addShare}
-                                        />
-                                    );
-                                })}
-                            </Scroll>
-                            <Music />
-                        </Route>
-                    </Switch>
-                </>
-            </Switch>
-        </div>
-    );
+            <Route path="/">
+              <UserOptions handlePostClicked={handlePostClicked} />
+              {postClick && (
+                <UserPostOpened
+                  addToFeed={addToFeed}
+                  handlePostClicked={handlePostClicked}
+                />
+              )}
+              <Scroll>
+                {postData.map((post) => {
+                  console.log(post);
+                  return (
+                    <Feed
+                      key={post.id}
+                      image={post.avatarImage}
+                      data={post}
+                      handleLikeBtn={addLikes}
+                      handleShareBtn={addShare}
+                    />
+                  );
+                })}
+              </Scroll>
+              <Music />
+            </Route>
+          </Switch>
+        </>
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
