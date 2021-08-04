@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/genus/static/css/main.9bfbea75.chunk.css",
+    "main.js": "/genus/static/js/main.a2f4e20a.chunk.js",
+    "main.js.map": "/genus/static/js/main.a2f4e20a.chunk.js.map",
+    "runtime-main.js": "/genus/static/js/runtime-main.add5cbad.js",
+    "runtime-main.js.map": "/genus/static/js/runtime-main.add5cbad.js.map",
+    "static/js/2.7b7c3223.chunk.js": "/genus/static/js/2.7b7c3223.chunk.js",
+    "static/js/2.7b7c3223.chunk.js.map": "/genus/static/js/2.7b7c3223.chunk.js.map",
+    "index.html": "/genus/index.html",
+    "static/css/main.9bfbea75.chunk.css.map": "/genus/static/css/main.9bfbea75.chunk.css.map",
+    "static/js/2.7b7c3223.chunk.js.LICENSE.txt": "/genus/static/js/2.7b7c3223.chunk.js.LICENSE.txt",
+    "static/media/airforceone.mp3": "/genus/static/media/airforceone.c16c919a.mp3",
+    "static/media/girl.jpg": "/genus/static/media/girl.094150dc.jpg",
+    "static/media/logo2.png": "/genus/static/media/logo2.53ade288.png",
+    "static/media/pom.jpg": "/genus/static/media/pom.e43ff0e4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.add5cbad.js",
+    "static/js/2.7b7c3223.chunk.js",
+    "static/css/main.9bfbea75.chunk.css",
+    "static/js/main.a2f4e20a.chunk.js"
+  ]
+}
