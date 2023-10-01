@@ -1,4 +1,4 @@
-website: https://jjesusteran-mori.github.io/genus/
+website: https://lteranl.github.io/genus/
 
 # Getting Started with Create React App
 
